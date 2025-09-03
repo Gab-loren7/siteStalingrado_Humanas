@@ -1,0 +1,18 @@
+.container_Navbar {
+    display: block;
+    width: 90px;
+    height: 100vh;
+    padding: 100px 0px 50px 20px;
+    background-color: #8C3B42;
+    color: #EEC68F;
+
+    overflow: hidden;
+
+    border-right: 5px solid #EEC68F;
+    box-shadow: 0px 0px 30px -10px #1f1f1f;
+
+    position: fixed;
+
+    z-index: 10;
+    transition: all ease .5s;
+}
