@@ -3,30 +3,38 @@
     position: absolute;
     background-image: url('../../img/Stalingrado.jpg');
 
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 95%;
     height: 600px;
-    margin-left: 85px;
-}.Capa::after {
+    margin-left: 80px;
+}
+
+.Capa::after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 5px solid #EEC68F;
+    
 }
 
-.Main {
-    z-index: 5;
-    width: 100%;
-    padding: 20px;
+.Container {
+    width: 92%;
+    margin-left: 120px;
 
-    margin-left: 100px;
     display: block;
     align-content: center;
     justify-content: center;
+}
+
+.Main {
+    margin: auto;
+    z-index: 5;
+    width: 100%;
+    padding: 20px;
 
 }
 
@@ -36,11 +44,15 @@
     margin-bottom: 120px;
     text-shadow: #000 2px 4px 6px;
     color: #EEC68F;
-}.Titulo h1 {
+}
+
+.Titulo h1 {
     font-size: 80px;
     font-weight: 600;
 
-}.Titulo p {
+}
+
+.Titulo p {
     font-size: 48px;
     font-family: "Lora", serif;
     font-style: italic;
@@ -50,14 +62,18 @@
 .container_dataLocal {
     display: flex;
     margin: auto;
+
     width: 70%;
-    height: 650px;
+    height: 600px;
     padding: 40px;
-    gap: 3%;
+    margin-bottom: 30px;
+    gap: 1%;
 
     background-color: #524e4d;
     border: 5px solid #BF5454;
-} .container_dataLocal .Texto {
+}
+
+.container_dataLocal .Texto {
     font-family: "Hind Madurai", sans-serif;
     text-align: justify;
     line-height: 1.8;
@@ -65,9 +81,11 @@
 
     color: #EEC68F;
 
-    width: 45%;
+    width: 48%;
     height: 100%;
-} .container_dataLocal .Texto h2 {
+}
+
+.container_dataLocal .Texto h2 {
     font-family: "Lora", serif;
     font-weight: 300;
     font-style: italic;
@@ -75,10 +93,14 @@
     color: #EEC68F;
     font-size: 36px;
     margin-bottom: 20px;
-} .container_dataLocal .Texto p {
-    font-size: 20px;
+}
+
+.container_dataLocal .Texto p {
+    font-size: 18px;
     margin-top: 20px;
-} .container_dataLocal .Texto a {
+}
+
+.container_dataLocal .Texto a {
     text-decoration: none;
     color: #EEC68F;
 }
@@ -93,11 +115,48 @@
 
 /* Proporção */
 @media screen and (max-width: 840px) {
-    .Capa {
+    .Container {
+        width: 100%;
         margin-left: 0px;
     }
 
-    .Main {
+    .Capa {
+        position: relative;
+        width: 100%;
         margin-left: 0px;
+        height: 420px;
+    }.Capa::after {
+        position: absolute;
+        height: 420px;
+    }
+
+    .Main {
+        margin-top: -450px;
+        margin-left: 0px;
+    }
+
+
+    .Titulo{
+        margin-top: 100px;
+        margin-bottom: 90px
+    } .Titulo h1 {
+        font-size: 2.5rem;
+    } .Titulo p {
+       font-size: 2rem;
+    }
+
+    .container_dataLocal {
+        display: block;
+        height: 100%;
+        width: 90%;
+        padding: 15px;
+    }.container_dataLocal .Texto {
+        display: block;
+        width: 100%;
+    }.container_dataLocal img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 20px;
     }
 }

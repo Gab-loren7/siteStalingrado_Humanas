@@ -1,7 +1,10 @@
 import React from 'react'
 import Styles from './Navbar/Navbar.module.css';
 
+import localData from '../img/Icons_localData.png'
+
 const IconsNavbar = () => {
+
     return (
         <div>
 
@@ -9,43 +12,20 @@ const IconsNavbar = () => {
 
                 {/* Inicio */}
                 <li className={Styles.item_menu}>
-                    <a href=' '>
+                    <a href='#InicioDirecao'>
                         <span className={Styles.icon}><i class="bi bi-house-fill" /></span>
                         <span className={Styles.txt_link}>Início</span>
                     </a>
                 </li>
 
-                {/* Promoções */}
+                {/* Data Local */}
                 <li className={Styles.item_menu}>
-                    <a href=' '>
-                        <span className={Styles.icon}><i class="bi bi-currency-dollar icons" /></span>
-                        <span className={Styles.txt_link}>Promoções</span>
+                    <a href='#DataLocal'>
+                        <span className={Styles.icon}><img src={[localData]} /></span>
+                        <span className={Styles.txt_link}>Data e Local</span>
                     </a>
                 </li>
 
-                {/* Perfil */}
-                <li className={Styles.item_menu}>
-                    <a href=' '>
-                        <span className={Styles.icon}><i class="bi bi-person-circle icons" /></span>
-                        <span className={Styles.txt_link}>Perfil ADM</span>
-                    </a>
-                </li>
-
-                {/* Compras */}
-                <li className={Styles.item_menu}>
-                    <a href=' '>
-                        <span className={Styles.icon}> <i class="bi bi-bag-fill" /></span>
-                        <span className={Styles.txt_link}>Compras</span>
-                    </a>
-                </li>
-
-                {/* Empresa */}
-                <li className={Styles.item_menu}>
-                    <a href=' '>
-                        <span className={Styles.icon}> <i class="bi bi-building-fill icons" /></span>
-                        <span className={Styles.txt_link}>Empresa</span>
-                    </a>
-                </li>
             </ul>
         </div>
 
