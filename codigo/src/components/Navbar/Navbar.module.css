@@ -1,8 +1,8 @@
 .container_Navbar {
     display: block;
-    width: 90px;
+    width: 120px;
     height: 100vh;
-    padding: 100px 0px 50px 20px;
+    padding: 100px 0px 50px 40px;
     background-color: #8C3B42;
     color: #EEC68F;
 
@@ -15,4 +15,38 @@
 
     z-index: 10;
     transition: all ease .5s;
+}.container_Navbar:hover {
+    width: 350px;
+}
+
+@media screen and (max-width: 840px) {
+    .container_Navbar {
+       display: none;
+    }
+
+}
+
+.container_Navbar ul {
+    list-style-type: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+ul li.item_menu a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 40px;
+
+    width: 400px;
+    padding: 20px 4%;
+    display: flex;
+    transition: all ease .5s;
+}
+
+ul li.item_menu a:hover {
+    color: #1f1f1f;
+}
+
+ul li.item_menu a .txt_link {
+    margin-left: 35px;
 }
