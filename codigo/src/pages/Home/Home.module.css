@@ -18,7 +18,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 5px solid #EEC68F;
-    
+
 }
 
 .Container {
@@ -59,21 +59,8 @@
 
 }
 
-.container_dataLocal {
-    display: flex;
-    margin: auto;
-
-    width: 70%;
-    height: 600px;
-    padding: 40px;
-    margin-bottom: 30px;
-    gap: 1%;
-
-    background-color: #524e4d;
-    border: 5px solid #BF5454;
-}
-
-.container_dataLocal .Texto {
+/* Formatação Texto Container*/
+.Texto {
     font-family: "Hind Madurai", sans-serif;
     text-align: justify;
     line-height: 1.8;
@@ -85,24 +72,32 @@
     height: 100%;
 }
 
-.container_dataLocal .Texto h2 {
-    font-family: "Lora", serif;
-    font-weight: 300;
-    font-style: italic;
+.Texto h2 {
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
-    color: #EEC68F;
-    font-size: 36px;
+.Texto hr {
     margin-bottom: 20px;
 }
 
-.container_dataLocal .Texto p {
-    font-size: 18px;
-    margin-top: 20px;
-}
+/* FIM Formatação Texto Container*/
 
-.container_dataLocal .Texto a {
-    text-decoration: none;
-    color: #EEC68F;
+/* Data Local */
+.container_dataLocal {
+    display: flex;
+    margin: auto;
+
+    width: 80%;
+    height: 600px;
+
+    padding: 40px;
+    margin-bottom: 100px;
+    gap: 1%;
+
+    background-color: #524e4d;
+    border: 5px solid #BF5454;
 }
 
 .container_dataLocal img {
@@ -112,6 +107,47 @@
     object-fit: cover;
     border-radius: 20px;
 }
+
+/* FIM Data Local */
+
+/* Resumo Estrategico */
+.container_resumoestrategia {
+    display: flex;
+    width: 102%;
+    height: 600px;
+    margin-left: -30px;
+    padding: 40px;
+    margin-bottom: 100px;
+    gap: 3%;
+    background-color: #8C3B42;
+    border: #EEC68F 5px solid;
+}
+
+.img_resumoestrategia {
+    width: 45%;
+    height: 100%;
+    margin-left: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* FIM Resumo Estrategico */
+
+/* Forças e Perdas */
+.container_forcasPerdas {
+    display: block;
+}
+.galeriaFotos {
+    margin: auto;
+    display: block;
+    width: 80%;
+    background-color: #8C3B42;
+    height: 200px;
+}.boxfotoTop {
+    display: flex;
+}
+/* FIM Forças e Perdas */
+
 
 /* Proporção */
 @media screen and (max-width: 840px) {
@@ -125,7 +161,9 @@
         width: 100%;
         margin-left: 0px;
         height: 420px;
-    }.Capa::after {
+    }
+
+    .Capa::after {
         position: absolute;
         height: 420px;
     }
@@ -136,13 +174,17 @@
     }
 
 
-    .Titulo{
+    .Titulo {
         margin-top: 100px;
         margin-bottom: 90px
-    } .Titulo h1 {
+    }
+
+    .Titulo h1 {
         font-size: 2.5rem;
-    } .Titulo p {
-       font-size: 2rem;
+    }
+
+    .Titulo p {
+        font-size: 2rem;
     }
 
     .container_dataLocal {
@@ -150,10 +192,14 @@
         height: 100%;
         width: 90%;
         padding: 15px;
-    }.container_dataLocal .Texto {
+    }
+
+    .container_dataLocal .Texto {
         display: block;
         width: 100%;
-    }.container_dataLocal img {
+    }
+
+    .container_dataLocal img {
         width: 100%;
         height: auto;
         margin: auto;

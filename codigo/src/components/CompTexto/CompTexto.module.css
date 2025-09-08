@@ -1,0 +1,19 @@
+.texto {
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.font {
+    text-decoration: none;
+    color: #EEC68F;
+    font-size: 17px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.espaco{
+    height: 2vh;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+}
