@@ -1,8 +1,8 @@
 .container_Navbar {
     display: block;
-    width: 120px;
+    width: 110px;
     height: 100vh;
-    padding: 80px 0px 50px 40px;
+    padding: 10px 0px 40px 40px;
     background-color: #8C3B42;
     color: #EEC68F;
 
@@ -35,9 +35,9 @@
 ul li.item_menu a {
     text-decoration: none;
     color: #EEC68F;
-    font-size: 40px;
+    font-size: 35px;
 
-    width: 700px;
+    width: 350px;
     margin-left: -50px;
     padding: 20px 50px;
 
@@ -45,7 +45,7 @@ ul li.item_menu a {
     transition: ease all .5s;
 }ul li.item_menu img {
     margin-top: 10px;
-    width: 40px;
+    width: 35px;
     height: 40px;
 }
 

@@ -1,17 +1,19 @@
-import React from 'react'
-import Styles from './Home.module.css'
+import React from 'react';
+import Styles from './Home.module.css';
 
-import Navbar from '../../components/Navbar/Navbar.js'
-import CompTitulo from '../../components/CompTitulo/CompTitulo.js'
-import CompTexto from '../../components/CompTexto/CompTexto.js'
+import Navbar from '../../components/Navbar/Navbar.js';
+import CompTitulo from '../../components/CompTitulo/CompTitulo.js';
+import CompTexto from '../../components/CompTexto/CompTexto.js';
 
-import img_dataLocal from '../../img/Data&Local.png'
-import img_resumoestrategia from '../../img/stalingrado_mapa.png'
-import imgForcasPerdas1 from '../../img/Forcas&Perdas1.png'
-import imgForcasPerdas2 from '../../img/Forças&Perdas2.png'
-import imgForcasPerdas3 from '../../img/Forças&Perdas3.jpg'
+import img_dataLocal from '../../img/Data&Local.png';
+import img_resumoestrategia from '../../img/stalingrado_mapa.png';
+// import imgForcasPerdas1 from '../../img/Forcas&Perdas1.png';
+// import imgForcasPerdas2 from '../../img/Forças&Perdas2.png';
+// import imgForcasPerdas3 from '../../img/Forças&Perdas3.jpg';
 
 let Home = () => {
+
+
     return (
         <div>
             <Navbar />

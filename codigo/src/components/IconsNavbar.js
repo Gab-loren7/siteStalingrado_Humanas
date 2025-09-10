@@ -1,9 +1,22 @@
 import React from 'react'
 import Styles from './Navbar/Navbar.module.css';
 
-import localData from '../img/Icons_localData.png'
+import localData from '../img/Icons_localData.png';
+import forcasPerdas from '../img/logoForcas&Perdas-03.png';
+import tecnologiasTaticas from '../img/LogoTecnologias-03.png';
+import curiosidadesHistoricas from '../img/logoCuriosidadesHistoricas-04.png';
+import leiturasRecomendadas from '../img/LogoLeiturasObrigatorias-05.png';
 
 const IconsNavbar = () => {
+
+    const OFFSET = 80;   // quanto vai parar antes
+    const scrollToSection = (id) => {
+        const alvo = document.querySelector(id);
+        if (alvo) {
+            const destino = alvo.offsetTop - OFFSET;
+            window.scrollTo({ top: destino, behavior: "smooth" });
+        }
+    };
 
     return (
         <div>
@@ -11,7 +24,7 @@ const IconsNavbar = () => {
             <ul>
 
                 {/* Inicio */}
-                <li className={Styles.item_menu}>
+                <li className={Styles.item_menu} onClick={() => scrollToSection('#InicioDirecao')}>
                     <a href='#InicioDirecao'>
                         <span className={Styles.icon}><i class="bi bi-house-fill" /></span>
                         <span className={Styles.txt_link}>Início</span>
@@ -19,10 +32,47 @@ const IconsNavbar = () => {
                 </li>
 
                 {/* Data Local */}
-                <li className={Styles.item_menu}>
+                <li className={Styles.item_menu} onClick={() => scrollToSection('#DataLocal')}>
                     <a href='#DataLocal'>
                         <span className={Styles.icon}><img src={[localData]} /></span>
                         <span className={Styles.txt_link}>Data e Local</span>
+                    </a>
+                </li>
+
+                {/* Resumo Estratégico */}
+                <li className={Styles.item_menu} onClick={() => scrollToSection('#ResumoEstrategia')}>
+                    <a href='#ResumoEstrategia'>
+                        <span className={Styles.icon}> <i class="bi bi-file-earmark-text-fill" /></span>
+                        <span className={Styles.txt_link}>Resumo Estratégico</span>
+                    </a>
+                </li>
+
+                {/* Forças e Perdas */}
+                <li className={Styles.item_menu}>
+                    <a href='#DataLocal'>
+                        <span className={Styles.icon}><img src={[forcasPerdas]} /></span>
+                        <span className={Styles.txt_link}>Forças e Perdas</span>
+                    </a>
+                </li>
+                {/* Técnologias e Táticas */}
+                <li className={Styles.item_menu}>
+                    <a href='#DataLocal'>
+                        <span className={Styles.icon}><img src={[tecnologiasTaticas]} /></span>
+                        <span className={Styles.txt_link}>Técnologias e Táticas</span>
+                    </a>
+                </li>
+                {/* Curiosidades Históricas */}
+                <li className={Styles.item_menu}>
+                    <a href='#DataLocal'>
+                        <span className={Styles.icon}><img src={[curiosidadesHistoricas]} /></span>
+                        <span className={Styles.txt_link}>Curiosidades Históricas</span>
+                    </a>
+                </li>
+                {/* Leituras Recomendadas */}
+                <li className={Styles.item_menu}>
+                    <a href='#DataLocal'>
+                        <span className={Styles.icon}><img src={[leiturasRecomendadas]} /></span>
+                        <span className={Styles.txt_link}>Leituras Recomendadas</span>
                     </a>
                 </li>
 
