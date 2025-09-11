@@ -6,10 +6,10 @@ import CompTitulo from '../../components/CompTitulo/CompTitulo.js';
 import CompTexto from '../../components/CompTexto/CompTexto.js';
 
 import img_dataLocal from '../../img/Data&Local.png';
-import img_resumoestrategia from '../../img/stalingrado_mapa.png';
-// import imgForcasPerdas1 from '../../img/Forcas&Perdas1.png';
-// import imgForcasPerdas2 from '../../img/Forças&Perdas2.png';
-// import imgForcasPerdas3 from '../../img/Forças&Perdas3.jpg';
+import img_resumoestrategia from '../../img/imgMapa.webp';
+import imgForcasPerdas1 from '../../img/Forças&Perdas1.jpg';
+import imgForcasPerdas2 from '../../img/Forças&Perdas2.png';
+import imgForcasPerdas3 from '../../img/Forças&Perdas3.jpg';
 
 let Home = () => {
 
@@ -50,15 +50,15 @@ let Home = () => {
                     {/* FIM Container Resumo e Estrategias */}
 
                     {/* Container Forças e Perdas */}
-                    <div className={Styles.container_forcasPerdas}>
-                        <CompTitulo Titulo={'Forças e Perdas'} />
+                    <div className={Styles.container_forcasPerdas} id='ForcasEPerdas'>
+                        <CompTitulo Titulo={'Forças e Perdas'}  />
 
                         <div className={Styles.galeriaFotos}>
-                            <div className={Styles.boxfotoTop}>
-                                <img />
-                                <img />
+                            <div className={Styles.boxfotoTop} >
+                                <img src={imgForcasPerdas1} />
+                                <img src={imgForcasPerdas2} />
                             </div>
-                            <img />
+                            <img src={imgForcasPerdas3} className={Styles.imgSoldado} />
                         </div>
                     </div>
                 </div>

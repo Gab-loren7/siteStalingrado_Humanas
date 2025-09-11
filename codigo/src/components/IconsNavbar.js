@@ -8,23 +8,13 @@ import curiosidadesHistoricas from '../img/logoCuriosidadesHistoricas-04.png';
 import leiturasRecomendadas from '../img/LogoLeiturasObrigatorias-05.png';
 
 const IconsNavbar = () => {
-
-    const OFFSET = 80;   // quanto vai parar antes
-    const scrollToSection = (id) => {
-        const alvo = document.querySelector(id);
-        if (alvo) {
-            const destino = alvo.offsetTop - OFFSET;
-            window.scrollTo({ top: destino, behavior: "smooth" });
-        }
-    };
-
-    return (
+return (
         <div>
 
             <ul>
 
                 {/* Inicio */}
-                <li className={Styles.item_menu} onClick={() => scrollToSection('#InicioDirecao')}>
+                <li className={Styles.item_menu}>
                     <a href='#InicioDirecao'>
                         <span className={Styles.icon}><i class="bi bi-house-fill" /></span>
                         <span className={Styles.txt_link}>Início</span>
@@ -32,7 +22,7 @@ const IconsNavbar = () => {
                 </li>
 
                 {/* Data Local */}
-                <li className={Styles.item_menu} onClick={() => scrollToSection('#DataLocal')}>
+                <li className={Styles.item_menu}>
                     <a href='#DataLocal'>
                         <span className={Styles.icon}><img src={[localData]} /></span>
                         <span className={Styles.txt_link}>Data e Local</span>
@@ -40,7 +30,7 @@ const IconsNavbar = () => {
                 </li>
 
                 {/* Resumo Estratégico */}
-                <li className={Styles.item_menu} onClick={() => scrollToSection('#ResumoEstrategia')}>
+                <li className={Styles.item_menu}>
                     <a href='#ResumoEstrategia'>
                         <span className={Styles.icon}> <i class="bi bi-file-earmark-text-fill" /></span>
                         <span className={Styles.txt_link}>Resumo Estratégico</span>
@@ -49,7 +39,7 @@ const IconsNavbar = () => {
 
                 {/* Forças e Perdas */}
                 <li className={Styles.item_menu}>
-                    <a href='#DataLocal'>
+                    <a href='#ForcasEPerdas'>
                         <span className={Styles.icon}><img src={[forcasPerdas]} /></span>
                         <span className={Styles.txt_link}>Forças e Perdas</span>
                     </a>

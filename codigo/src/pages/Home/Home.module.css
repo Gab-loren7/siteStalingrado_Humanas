@@ -127,7 +127,6 @@
     width: 45%;
     height: 100%;
     margin-left: 20px;
-    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -141,10 +140,29 @@
     margin: auto;
     display: block;
     width: 80%;
-    background-color: #8C3B42;
     height: 200px;
 }.boxfotoTop {
     display: flex;
+    width: 100%;
+    height: 200px;
+    gap: 30px;
+}.boxfotoTop img {
+    object-fit: cover;
+    width: 50%;
+
+    border: 5px solid #8C3B42;
+    border-radius: 20px;
+} .imgSoldado {
+    margin-top: 30px;
+    width: 100%;
+    height: 150%;
+    margin-bottom: 30px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 5px solid #8C3B42;
+    border-radius: 20px;
 }
 /* FIM Forças e Perdas */
 
