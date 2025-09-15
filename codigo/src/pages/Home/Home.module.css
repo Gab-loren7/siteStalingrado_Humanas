@@ -1,5 +1,5 @@
 .Capa {
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     background-image: url('../../img/Stalingrado.jpg');
 
@@ -87,13 +87,14 @@
 /* Data Local */
 .container_dataLocal {
     display: flex;
+    
     margin: auto;
 
     width: 80%;
     height: 600px;
 
     padding: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     gap: 1%;
 
     background-color: #524e4d;
@@ -114,10 +115,10 @@
 .container_resumoestrategia {
     display: flex;
     width: 102%;
-    height: 600px;
+    height: 650px;
     margin-left: -40px;
     padding: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     gap: 3%;
     background-color: #8C3B42;
     border: #EEC68F 5px solid;
@@ -134,38 +135,117 @@
 
 /* Forças e Perdas */
 .container_forcasPerdas {
-    display: block;
+    margin: auto;
+    color: #EEC68F;
+    font-weight: 300;
+    text-align: justify;
+    width: 100%;
+    border: 2px solid red;
 }
+
 .galeriaFotos {
     margin: auto;
-    display: block;
+    height: auto;
     width: 80%;
-    height: 200px;
-}.boxfotoTop {
-    display: flex;
-    width: 100%;
-    height: 200px;
-    gap: 30px;
-}.boxfotoTop img {
-    object-fit: cover;
-    width: 50%;
+}
 
+.boxfotoTop {
+    display: flex;
+    gap: 30px;
+    height: 300px;
+}
+
+.boxfotoTop img {
+    flex: 1;
+    object-fit: cover;
     border: 5px solid #8C3B42;
     border-radius: 20px;
-} .imgSoldado {
-    margin-top: 30px;
-    width: 100%;
-    height: 150%;
-    margin-bottom: 30px;
+}
 
+.imgSoldado {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     object-fit: cover;
     object-position: center;
 
     border: 5px solid #8C3B42;
     border-radius: 20px;
 }
+
+.textwidth {
+    width: 95%;
+    margin: auto;
+}
 /* FIM Forças e Perdas */
 
+/* Tecnologias e Táticas */
+.container_tecnologiasTaticas {
+    border: 2px solid red;
+    margin: auto;
+    z-index: 5;
+    width: 100%;
+    text-align: justify;
+} .container_tecnologiasTaticas .textwidth img{
+    float: right;
+    object-fit: cover;
+    object-position: center;
+    width: 70%;
+    height: 420px;
+    margin: 7px 30px;
+} .container_tecnologiasTaticas .textwidth span{
+    font-size: 20px;
+} 
+/* FIM   Tecnologias e Táticas */
+
+/* Curiosidades históricas */
+.container_curiosidadesHistoricas {
+    display: block;
+    margin: auto;
+
+    width: 100%;
+    height: 600px;
+
+    padding: 40px;
+    margin-bottom: 100px;
+    gap: 1%;
+}
+
+.img_curiosidadesHistoricas,
+.img_curiosidadesHistoricas img {
+    width: 40%;
+    height: 100%;
+    margin-left: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Fim Curiosidades históricas */
+
+/* Leituras Recomendadas */
+.container_leiturasRecomendadas {
+    display: block;
+    margin: auto;
+
+    width: 100%;
+    height: 600px;
+
+    padding: 40px;
+    margin-bottom: 100px;
+    gap: 1%;
+}
+
+.img_leiturasRecomendadas,
+.img_leiturasRecomendadas img {
+    width: 40%;
+    height: 100%;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Fim Leituras Recomendadas */
 
 /* Proporção */
 @media screen and (max-width: 840px) {
@@ -223,4 +303,28 @@
         margin: auto;
         margin-top: 20px;
     }
+
+    .container_resumoestrategia {
+        display: block;
+        width: 90%;
+        height: 100%;
+        padding: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }.container_resumoestrategia .Texto {
+        width: 95%;
+        margin: auto;
+        margin-top: 10px;
+        text-align: justify;
+        align-items: center;
+    }
+
+    
+    .img_resumoestrategia {
+        width: 90%;
+        height: 250px;
+        margin-left: 20px;
+        border-radius: 20px;
+    }
+    
 }
