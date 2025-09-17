@@ -10,7 +10,7 @@ let CompTexto = ({ Texto, Font, Url }) => {
                 </span>
             </div>
             <div  className={Styles.espaco}/>
-            <a href={Url} className={Styles.font} target="_blank" ><span>{Font}</span></a>
+            <a href={props.Url} target="_blank" rel="noopener noreferrer">{props.Font}</a>
         </div>
     )
 }
