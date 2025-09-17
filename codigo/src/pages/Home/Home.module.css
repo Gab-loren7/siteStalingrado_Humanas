@@ -394,7 +394,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 485px) {
 
     .container_dataLocal span {
         font-size: 14px;
@@ -458,8 +458,14 @@ footer {
         height: 20vh;
     }
 
-    .boxfotoTop {
-        height: 15vh;
+    .galeriaFotos{
+        height: auto;
+        width: 100%;
+    }.boxfotoTop {
+        height: 11vh;
+    }.imgSoldado {
+        height: 30vh;
+        width: 100%;
     }
 }
 
