@@ -188,14 +188,18 @@
     z-index: 5;
     width: 100%;
     text-align: justify;
-}.container_tecnologiasTaticas .textwidth img {
+}
+
+.container_tecnologiasTaticas .textwidth img {
     float: right;
     object-fit: cover;
     object-position: center;
     width: 70%;
     height: 420px;
     margin: 7px 30px;
-}/* FIM Tecnologias e Táticas */
+}
+
+/* FIM Tecnologias e Táticas */
 
 /* Curiosidades históricas */
 .container_curiosidadesHistoricas {
@@ -203,10 +207,14 @@
     margin: auto;
     width: 100%;
     text-align: justify;
-}.container_curiosidadesHistoricas .textwidth {
+}
+
+.container_curiosidadesHistoricas .textwidth {
     display: flex;
     width: 95%;
-}.container_curiosidadesHistoricas .textwidth img {
+}
+
+.container_curiosidadesHistoricas .textwidth img {
     width: 50%;
     height: 400px;
     margin: 7px 20px;
@@ -242,6 +250,7 @@
 footer {
     text-align: center;
     color: #EEC68F;
+    margin-top: 2%;
     margin-bottom: 50px;
 }
 
@@ -335,16 +344,18 @@ footer {
     }
 
     .boxfotoTop {
-        height: calc(15vh);
+        height: 15vh;
     }
 
     .imgSoldado {
         height: 30vh;
     }
 
-    .container_tecnologiasTaticas .textwidth{
+    .container_tecnologiasTaticas .textwidth {
         display: block;
-    }.container_tecnologiasTaticas .textwidth img {
+    }
+
+    .container_tecnologiasTaticas .textwidth img {
         float: none;
         width: 90%;
         height: 300px;
@@ -354,23 +365,155 @@ footer {
 
     .container_curiosidadesHistoricas .textwidth {
         display: block;
-    }.container_curiosidadesHistoricas .textwidth img {
+    }
+
+    .container_curiosidadesHistoricas .textwidth img {
         width: 90%;
         height: 300px;
         margin: 15px auto;
         display: block;
-    }.container_curiosidadesHistoricas .textwidth a{
+    }
+
+    .container_curiosidadesHistoricas .textwidth a {
         margin-bottom: 20px;
     }
 
-    .container_leiturasRecomendadas .textoImg{
+    .container_leiturasRecomendadas .textoImg {
         display: block;
-    }.container_leiturasRecomendadas .textoImg img {
+    }
+
+    .container_leiturasRecomendadas .textoImg img {
         width: 90%;
         height: 300px;
         margin: 15px auto;
         display: block;
-    } .container_leiturasRecomendadas .textoImg .Texto {
+    }
+
+    .container_leiturasRecomendadas .textoImg .Texto {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    .container_dataLocal span {
+        font-size: 14px;
+    }
+
+    .container_dataLocal h2 {
+        font-size: 38px;
+    }
+
+    .container_resumoestrategia span {
+        font-size: 16px;
+    }
+
+    .container_resumoestrategia h2 {
+        font-size: 38px;
+    }
+
+    .container_forcasPerdas span {
+        font-size: 16px;
+    }
+
+    .container_forcasPerdas h2 {
+        font-size: 38px;
+    }
+
+    .container_tecnologiasTaticas span {
+        font-size: 16px;
+    }
+
+    .container_tecnologiasTaticas h2 {
+        font-size: 38px;
+    }
+
+    .container_curiosidadesHistoricas span {
+        font-size: 16px;
+    }
+
+    .container_curiosidadesHistoricas h2 {
+        font-size: 38px;
+    }
+
+    .container_leiturasRecomendadas span {
+        font-size: 16px;
+    }
+
+    .container_leiturasRecomendadas h2 {
+        font-size: 38px;
+    }
+
+    .container_dataLocal img {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .container_resumoestrategia .Texto span {
+        font-size: 16px;
+    }
+
+    .img_resumoestrategia {
+        width: 90%;
+        height: 20vh;
+    }
+
+    .boxfotoTop {
+        height: 15.5vh;
+    }
+}
+
+@media screen and (max-width: 370px) {
+
+    .Titulo h1 {
+        font-size: 2rem;
+    }.Titulo p {
+        font-size: 1.5rem;
+    }
+
+    .container_dataLocal .Texto span {
+        font-size: 14px;
+    }
+
+    .container_dataLocal img {
+        width: 80%;
+        height: 30vh;
+    }
+
+    .container_resumoestrategia .Texto span {
+        font-size: 14px;
+    }
+
+    .img_resumoestrategia {
+        width: 90%;
+        height: 20vh;
+    }
+
+    .boxfotoTop {
+        height: 12vh;
+    }
+
+    .container_dataLocal span {
+        font-size: 14px;
+    }
+
+    .container_resumoestrategia span {
+        font-size: 14px;
+    }
+
+    .container_forcasPerdas span {
+        font-size: 14px;
+    }
+
+    .container_tecnologiasTaticas span {
+        font-size: 14px;
+    }
+
+    .container_curiosidadesHistoricas span {
+        font-size: 14px;
+    }
+
+    .container_leiturasRecomendadas span {
+        font-size: 14px;
     }
 }
