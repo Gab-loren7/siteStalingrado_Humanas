@@ -525,6 +525,19 @@ footer {
         font-size: 14px;
     }
 
+    @media screen and (max-width: 310px) {
+    .galeriaFotos{
+        height: auto;
+        width: 100%;
+    }.boxfotoTop {
+        height: 8vh;
+    }.imgSoldado {
+        height: 20vh;
+        width: 100%;
+    }
+
+}
+
     .container_leiturasRecomendadas span {
         font-size: 14px;
     }
