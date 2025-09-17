@@ -489,8 +489,14 @@ footer {
         height: 20vh;
     }
 
-    .boxfotoTop {
+    .galeriaFotos{
+        height: auto;
+        width: 100%;
+    }.boxfotoTop {
         height: 11vh;
+    }.imgSoldado {
+        height: 30vh;
+        width: 100%;
     }
 
     .container_dataLocal span {
