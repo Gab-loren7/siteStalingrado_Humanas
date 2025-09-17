@@ -12,6 +12,7 @@ let CompTexto = ({ Texto, Font, Url }) => {
             <div className={Styles.espaco} />
             {Url && Font && (
                 <a 
+                    className={Styles.font}
                     href={Url} 
                     target="_blank" 
                     rel="noopener noreferrer"
