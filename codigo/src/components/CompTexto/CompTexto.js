@@ -9,10 +9,18 @@ let CompTexto = ({ Texto, Font, Url }) => {
                     {Texto}
                 </span>
             </div>
-            <div  className={Styles.espaco}/>
-            <a href={props.Url} target="_blank" rel="noopener noreferrer">{props.Font}</a>
+            <div className={Styles.espaco} />
+            {Url && Font && (
+                <a 
+                    href={Url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
+                    {Font}
+                </a>
+            )}
         </div>
     )
 }
 
-export default CompTexto;
+export default CompTexto
