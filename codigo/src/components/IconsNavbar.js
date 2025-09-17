@@ -46,21 +46,21 @@ return (
                 </li>
                 {/* Técnologias e Táticas */}
                 <li className={Styles.item_menu}>
-                    <a href='#DataLocal'>
+                    <a href='#TecnologiasTaticas'>
                         <span className={Styles.icon}><img src={[tecnologiasTaticas]} /></span>
                         <span className={Styles.txt_link}>Técnologias e Táticas</span>
                     </a>
                 </li>
                 {/* Curiosidades Históricas */}
                 <li className={Styles.item_menu}>
-                    <a href='#DataLocal'>
+                    <a href='#CuriosidadesHistoricas'>
                         <span className={Styles.icon}><img src={[curiosidadesHistoricas]} /></span>
                         <span className={Styles.txt_link}>Curiosidades Históricas</span>
                     </a>
                 </li>
                 {/* Leituras Recomendadas */}
                 <li className={Styles.item_menu}>
-                    <a href='#DataLocal'>
+                    <a href='#LeiturasRecomendadas'>
                         <span className={Styles.icon}><img src={[leiturasRecomendadas]} /></span>
                         <span className={Styles.txt_link}>Leituras Recomendadas</span>
                     </a>

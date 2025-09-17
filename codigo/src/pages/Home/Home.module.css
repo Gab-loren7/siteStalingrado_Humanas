@@ -87,7 +87,7 @@
 /* Data Local */
 .container_dataLocal {
     display: flex;
-    
+
     margin: auto;
 
     width: 80%;
@@ -118,7 +118,7 @@
     height: 650px;
     margin-left: -40px;
     padding: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     gap: 3%;
     background-color: #8C3B42;
     border: #EEC68F 5px solid;
@@ -140,7 +140,6 @@
     font-weight: 300;
     text-align: justify;
     width: 100%;
-    border: 2px solid red;
 }
 
 .galeriaFotos {
@@ -151,8 +150,9 @@
 
 .boxfotoTop {
     display: flex;
-    gap: 30px;
-    height: 300px;
+    gap: 2%;
+    height: 40vh;
+    width: 100%;
 }
 
 .boxfotoTop img {
@@ -160,6 +160,7 @@
     object-fit: cover;
     border: 5px solid #8C3B42;
     border-radius: 20px;
+    width: 100%;
 }
 
 .imgSoldado {
@@ -178,47 +179,39 @@
     width: 95%;
     margin: auto;
 }
+
 /* FIM Forças e Perdas */
 
 /* Tecnologias e Táticas */
 .container_tecnologiasTaticas {
-    border: 2px solid red;
     margin: auto;
     z-index: 5;
     width: 100%;
     text-align: justify;
-} .container_tecnologiasTaticas .textwidth img{
+}.container_tecnologiasTaticas .textwidth img {
     float: right;
     object-fit: cover;
     object-position: center;
     width: 70%;
     height: 420px;
     margin: 7px 30px;
-} .container_tecnologiasTaticas .textwidth span{
-    font-size: 20px;
-} 
-/* FIM   Tecnologias e Táticas */
+}/* FIM Tecnologias e Táticas */
 
 /* Curiosidades históricas */
 .container_curiosidadesHistoricas {
-    display: block;
+    z-index: 5;
     margin: auto;
-
     width: 100%;
-    height: 600px;
-
-    padding: 40px;
-    margin-bottom: 100px;
-    gap: 1%;
-}
-
-.img_curiosidadesHistoricas,
-.img_curiosidadesHistoricas img {
-    width: 40%;
-    height: 100%;
-    margin-left: 20px;
+    text-align: justify;
+}.container_curiosidadesHistoricas .textwidth {
+    display: flex;
+    width: 95%;
+}.container_curiosidadesHistoricas .textwidth img {
+    width: 50%;
+    height: 400px;
+    margin: 7px 20px;
     object-fit: cover;
-    border-radius: 20px;
+    object-position: center;
 }
 
 /* Fim Curiosidades históricas */
@@ -227,28 +220,36 @@
 .container_leiturasRecomendadas {
     display: block;
     margin: auto;
-
-    width: 100%;
-    height: 600px;
-
-    padding: 40px;
-    margin-bottom: 100px;
-    gap: 1%;
+    margin-top: 50px;
 }
 
-.img_leiturasRecomendadas,
-.img_leiturasRecomendadas img {
-    width: 40%;
-    height: 100%;
-    margin-right: 20px;
+.container_leiturasRecomendadas .textoImg {
+    display: flex;
+    gap: 2%;
+    width: 95%;
+    margin: auto;
+}
+
+.container_leiturasRecomendadas .textoImg img {
+    width: 50%;
     object-fit: cover;
-    border-radius: 20px;
+    object-position: center;
 }
 
 /* Fim Leituras Recomendadas */
 
-/* Proporção */
-@media screen and (max-width: 840px) {
+/* Footer */
+footer {
+    text-align: center;
+    color: #EEC68F;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+
+
+/* Proporção 1000px width*/
+@media screen and (max-width: 1000px) {
     .Container {
         width: 100%;
         margin-left: 0px;
@@ -286,10 +287,13 @@
     }
 
     .container_dataLocal {
-        display: block;
         height: 100%;
         width: 90%;
         padding: 15px;
+
+        display: block;
+        align-items: center;
+        justify-content: center;
     }
 
     .container_dataLocal .Texto {
@@ -298,10 +302,12 @@
     }
 
     .container_dataLocal img {
-        width: 100%;
-        height: auto;
         margin: auto;
-        margin-top: 20px;
+        display: flex;
+        width: 80%;
+        height: 50vh;
+        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
     .container_resumoestrategia {
@@ -311,7 +317,9 @@
         padding: 15px;
         margin-left: auto;
         margin-right: auto;
-    }.container_resumoestrategia .Texto {
+    }
+
+    .container_resumoestrategia .Texto {
         width: 95%;
         margin: auto;
         margin-top: 10px;
@@ -319,12 +327,50 @@
         align-items: center;
     }
 
-    
     .img_resumoestrategia {
         width: 90%;
-        height: 250px;
+        height: 40vh;
         margin-left: 20px;
         border-radius: 20px;
     }
-    
+
+    .boxfotoTop {
+        height: calc(15vh);
+    }
+
+    .imgSoldado {
+        height: 30vh;
+    }
+
+    .container_tecnologiasTaticas .textwidth{
+        display: block;
+    }.container_tecnologiasTaticas .textwidth img {
+        float: none;
+        width: 90%;
+        height: 300px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .container_curiosidadesHistoricas .textwidth {
+        display: block;
+    }.container_curiosidadesHistoricas .textwidth img {
+        width: 90%;
+        height: 300px;
+        margin: 15px auto;
+        display: block;
+    }.container_curiosidadesHistoricas .textwidth a{
+        margin-bottom: 20px;
+    }
+
+    .container_leiturasRecomendadas .textoImg{
+        display: block;
+    }.container_leiturasRecomendadas .textoImg img {
+        width: 90%;
+        height: 300px;
+        margin: 15px auto;
+        display: block;
+    } .container_leiturasRecomendadas .textoImg .Texto {
+        width: 100%;
+    }
 }

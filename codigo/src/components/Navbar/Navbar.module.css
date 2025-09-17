@@ -19,7 +19,7 @@
     width: 300px;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1000px) {
     .container_Navbar {
        display: none;
     }
