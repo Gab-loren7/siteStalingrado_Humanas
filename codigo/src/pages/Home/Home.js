@@ -4,6 +4,7 @@ import Styles from './Home.module.css';
 import Navbar from '../../components/Navbar/Navbar.js';
 import CompTitulo from '../../components/CompTitulo/CompTitulo.js';
 import CompTexto from '../../components/CompTexto/CompTexto.js';
+// import NavbarTop from '../../components/NavbarTop/NavbarTop.js';
 
 import img_dataLocal from '../../img/Data&Local.png';
 import img_resumoestrategia from '../../img/imgMapa.webp';
@@ -17,6 +18,7 @@ import img_leiturasRecomendadas from '../../img/LeiturasRecomendadas.png';
 const Home = () => {
     return (
         <div>
+            {/* <NavbarTop /> */}
             <Navbar />
             <div className={Styles.Container}>
                 <div className={Styles.Capa} id="InicioDirecao" />

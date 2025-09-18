@@ -29,3 +29,9 @@ body {
     height: 100vh;
 
 }
+
+@media (max-width: 1000px) {
+    body {
+        height: calc(100vh - 70px);
+    }
+}
